@@ -1,25 +1,30 @@
+// src/App.tsx
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import DashboardLayout from './components/DashboardLayout';
+import ActiveIncidents from './pages/ActiveIncidents';
+import IncidentResponse from './pages/IncidentResponse';
+import TeamContacts from './pages/TeamContacts';
+import Settings from './pages/Settings';
+import TestComponent from './TestComponent';
+import Documentation from './pages/Documentation';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<DashboardLayout />}>
+          <Route index element={<ActiveIncidents />} />
+          <Route path="incidents" element={<ActiveIncidents />} />
+          <Route path="active-incidents" element={<ActiveIncidents />} />
+          <Route path="response" element={<IncidentResponse />} />
+          <Route path="documentation" element={<Documentation />} />
+          <Route path="team" element={<TeamContacts />} />
+          <Route path="settings" element={<Settings />} />
+        </Route>
+        <Route path="/test" element={<TestComponent />} />
+      </Routes>
+    </Router>
   );
 }
 

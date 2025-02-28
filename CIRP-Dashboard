@@ -1,0 +1,7 @@
+# Neues Projekt erstellen
+npx create-react-app cirp-dashboard --template typescript
+# In das Projektverzeichnis wechseln
+cd cirp-dashboard
+# Tailwind CSS installieren
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
