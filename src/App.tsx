@@ -8,15 +8,18 @@ import TeamContacts from './pages/TeamContacts';
 import Settings from './pages/Settings';
 import TestComponent from './TestComponent';
 import Documentation from './pages/Documentation';
+import Dashboard from './pages/Dashboard';
+import IncidentDetailPage from './pages/IncidentDetailPage';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<DashboardLayout />}>
-          <Route index element={<ActiveIncidents />} />
+          <Route index element={<Dashboard />} />
           <Route path="incidents" element={<ActiveIncidents />} />
           <Route path="active-incidents" element={<ActiveIncidents />} />
+          <Route path="incidents/:id" element={<IncidentDetailPage />} />
           <Route path="response" element={<IncidentResponse />} />
           <Route path="documentation" element={<Documentation />} />
           <Route path="team" element={<TeamContacts />} />

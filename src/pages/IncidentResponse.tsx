@@ -6,74 +6,97 @@ const IncidentResponse: React.FC = () => {
   return (
     <div className="p-6">
       <h1 className="text-2xl font-bold mb-6">Incident Response Ressourcen</h1>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold mb-4">Prozeduren und Richtlinien</h2>
           <ul className="space-y-2">
             <li className="flex items-center">
               <span className="bg-blue-100 text-blue-800 p-1 rounded mr-2">📑</span>
-              <Link to="#" className="text-blue-600 hover:underline">Incident Response Plan (Master-Dokument)</Link>
+              <a
+                href="/incident-response-plan.pdf"
+                target="_blank"
+                className="text-blue-600 hover:underline"
+              >
+                Incident Response Plan (Master-Dokument)
+              </a>
             </li>
             <li className="flex items-center">
               <span className="bg-blue-100 text-blue-800 p-1 rounded mr-2">📑</span>
-              <Link to="#" className="text-blue-600 hover:underline">Benachrichtigungsmatrix</Link>
+              <a href="/benachrichtigungsmatrix.pdf" target="_blank" className="text-blue-600 hover:underline">Benachrichtigungsmatrix</a>
             </li>
             <li className="flex items-center">
               <span className="bg-blue-100 text-blue-800 p-1 rounded mr-2">📑</span>
-              <Link to="#" className="text-blue-600 hover:underline">Incident Klassifizierungsrichtlinien</Link>
+              <a href="/incident-klassifizierungsrichtlinien.pdf" target="_blank" className="text-blue-600 hover:underline">Incident Klassifizierungsrichtlinien</a>
             </li>
             <li className="flex items-center">
               <span className="bg-blue-100 text-blue-800 p-1 rounded mr-2">📑</span>
-              <Link to="#" className="text-blue-600 hover:underline">Lessons Learned Template</Link>
+              <a href="/lesson-learned-template.pdf" target="_blank" className="text-blue-600 hover:underline">Lessons Learned Template</a>
             </li>
           </ul>
         </div>
-        
+
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold mb-4">Playbook Bibliothek</h2>
           <ul className="space-y-2">
             <li className="flex items-center">
               <span className="bg-red-100 text-red-800 p-1 rounded mr-2">🛡️</span>
-              <Link to="#" className="text-blue-600 hover:underline">Ransomware Reaktion</Link>
+              <a href="/ransomware-reaktion.pdf" target="_blank" className="text-blue-600 hover:underline">Ransomware Reaktion</a>
             </li>
             <li className="flex items-center">
               <span className="bg-orange-100 text-orange-800 p-1 rounded mr-2">🛡️</span>
-              <Link to="#" className="text-blue-600 hover:underline">Datenleck / Datenverlust</Link>
+              <a href="/datenleck-datenverlust.pdf" target="_blank" className="text-blue-600 hover:underline">Datenleck / Datenverlust</a>
             </li>
             <li className="flex items-center">
               <span className="bg-yellow-100 text-yellow-800 p-1 rounded mr-2">🛡️</span>
-              <Link to="#" className="text-blue-600 hover:underline">Cloud-Service Ausfall</Link>
+              <a href="/aws-cloud-service-outage.pdf" target="_blank" className="text-blue-600 hover:underline">Cloud-Service Ausfall - AWS</a>
+            </li>
+            <li className="flex items-center">
+              <span className="bg-yellow-100 text-yellow-800 p-1 rounded mr-2">🛡️</span>
+              <a href="/azure-cloud-service-outage.pdf" target="_blank" className="text-blue-600 hover:underline">Cloud-Service Ausfall - Azure</a>
+            </li>
+            <li className="flex items-center">
+              <span className="bg-yellow-100 text-yellow-800 p-1 rounded mr-2">🛡️</span>
+              <a href="/gcp-cloud-service-outage.pdf" target="_blank" className="text-blue-600 hover:underline">Cloud-Service Ausfall - Google Cloud</a>
             </li>
             <li className="flex items-center">
               <span className="bg-blue-100 text-blue-800 p-1 rounded mr-2">🛡️</span>
-              <Link to="#" className="text-blue-600 hover:underline">Unberechtigter Zugriff</Link>
+              <a href="/unberechtigter-zugriff.pdf" target="_blank" className="text-blue-600 hover:underline">Unberechtigter Zugriff</a>
             </li>
             <li className="flex items-center">
               <span className="bg-purple-100 text-purple-800 p-1 rounded mr-2">🛡️</span>
-              <Link to="#" className="text-blue-600 hover:underline">Phishing Kampagne</Link>
+              <a href="/phishing-kampagne.pdf" target="_blank" className="text-blue-600 hover:underline">Phishing Kampagne</a>
             </li>
           </ul>
         </div>
-        
+
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold mb-4">Trainingsmaterialien</h2>
           <ul className="space-y-2">
             <li className="flex items-center">
               <span className="bg-green-100 text-green-800 p-1 rounded mr-2">🎓</span>
-              <Link to="#" className="text-blue-600 hover:underline">Incident Response Grundlagen</Link>
+              <a href="https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final" target="_blank" className="text-blue-600 hover:underline">
+                <span className="bg-green-100 text-green-800 p-1 rounded mr-2"></span>
+                Incident Response Grundlagen
+              </a>
             </li>
             <li className="flex items-center">
               <span className="bg-green-100 text-green-800 p-1 rounded mr-2">🎓</span>
-              <Link to="#" className="text-blue-600 hover:underline">Cloud-Sicherheit für Mittelstand</Link>
+              <a href="https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Empfehlungen-nach-Angriffszielen/Cloud-Computing/cloud-computing_node.html" target="_blank" className="text-blue-600 hover:underline">
+                <span className="bg-green-100 text-green-800 p-1 rounded mr-2"></span>
+                Cloud-Sicherheit für Mittelstand
+              </a>
             </li>
             <li className="flex items-center">
               <span className="bg-green-100 text-green-800 p-1 rounded mr-2">🎓</span>
-              <Link to="#" className="text-blue-600 hover:underline">Simulation: Ransomware-Angriff</Link>
+              <a href="https://www.cisa.gov/stopransomware/ransomware-guide" target="_blank" className="text-blue-600 hover:underline">
+                <span className="bg-green-100 text-green-800 p-1 rounded mr-2"></span>
+                Simulation: Ransomware-Angriff
+              </a>
             </li>
           </ul>
         </div>
-        
+
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold mb-4">Externe Ressourcen</h2>
           <ul className="space-y-2">
@@ -96,7 +119,7 @@ const IncidentResponse: React.FC = () => {
           </ul>
         </div>
       </div>
-      
+
       <div className="mt-8 bg-white p-6 rounded-lg shadow-md">
         <h2 className="text-xl font-semibold mb-4">Letzte Incident Response Übungen</h2>
         <div className="overflow-x-auto">
