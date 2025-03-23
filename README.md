@@ -1,3 +1,64 @@
+CIRP-Dashboard
+Ein Dashboard für Cloud Incident Response zur Bewältigung von Cybersicherheitsvorfällen in cloudbasierten IT-Umgebungen.
+Beschreibung
+Das CIRP-Dashboard (Cyber Incident Response Plan) wurde entwickelt, um Sicherheitsteams bei der effektiven Bewältigung von Sicherheitsvorfällen in Cloud-Umgebungen zu unterstützen. Es integriert etablierte Frameworks wie SANS und NIST und erweitert diese um cloud-spezifische Aspekte.
+Hauptfunktionen
+
+Strukturierte Übersicht über aktuelle Vorfälle
+Integrierte Playbooks mit maßgeschneiderten Methoden für verschiedene Cloud-Provider (AWS, Azure, Google Cloud)
+Berücksichtigung des geteilten Verantwortungsmodells für IaaS-, PaaS- und SaaS-Umgebungen
+Lückenlose Nachverfolgung und Dokumentation von Vorfällen
+Integrationen mit wichtigen Tools wie Slack, Jira, Microsoft Teams und PagerDuty
+
+Technologien
+
+React
+TypeScript
+React Router
+Inline CSS
+
+Voraussetzungen
+
+Node.js (Version 16 oder höher)
+npm (normalerweise mit Node.js installiert)
+
+Installation
+
+Repository klonen
+bashKopierengit clone https://github.com/dein-username/cirp-dashboard.git
+
+In das Projektverzeichnis wechseln
+bashKopierencd cirp-dashboard
+
+Abhängigkeiten installieren
+bashKopierennpm install
+
+Anwendung starten
+bashKopierennpm start
+
+Das Dashboard ist nun unter http://localhost:3000 verfügbar
+
+Nutzung
+Das Dashboard ist in verschiedene Bereiche gegliedert:
+
+Übersicht: Zeigt alle aktuellen Vorfälle und ihren Status
+Vorfälle: Detaillierte Ansicht einzelner Vorfälle
+Playbooks: Anleitungen für verschiedene Arten von Sicherheitsvorfällen
+Ressourcen: Wichtige Kontakte und Tools
+Einstellungen: Konfiguration des Dashboards
+
+Zukünftige Erweiterungen
+
+Integration mit echten Cloud-Provider-APIs
+Backend-System mit Datenbankanbindung
+Echtzeit-Benachrichtigungen
+Erweitertes Berechtigungskonzept
+Automatisierte Playbook-Aktionen
+Kontakt
+Isa Zoch - isa.zoch@web.de
+Projektlink: https://github.com/Iselgaardine/cirp-dashboard
+
+################################################################
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
